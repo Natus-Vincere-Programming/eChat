@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @use '@angular/material' as mat;
 @use 'app/_app_theme.scss' as app-theme;
-@use 'app/pages/login-pages/_login-pages-theme.scss' as login-page-theme;
+//@use 'app/pages/login-pages/_login-pages-theme.scss' as login-page-theme;
 
 @include mat.core();
 
@@ -16,7 +16,7 @@ $my-theme: mat.define-theme((
 html, body {
   @include app-theme.color($my-theme);
   @include app-theme.typography($my-theme);
-  @include login-page-theme.color($my-theme);
-  @include login-page-theme.typography($my-theme);
+  //@include login-page-theme.color($my-theme);
+  //@include login-page-theme.typography($my-theme);
 }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
